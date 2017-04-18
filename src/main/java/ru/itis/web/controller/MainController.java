@@ -30,7 +30,7 @@ public class MainController {
 		ModelAndView model = new ModelAndView();
 		model.addObject("title", "Welcome to Spring Security Example");
 		model.addObject("message", "WELCOME!");
-		model.setViewName("hello");
+		model.setViewName("home");
 		return model;
 
 	}

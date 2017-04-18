@@ -28,15 +28,7 @@ public class ActorDaoImpl implements ActorDao {
             List<Actor> actorsList = (session.createQuery("from Actor").list());
             return actorsList;
         }else{
-            Actor a = new Actor();
-            Actor b = new Actor();
-            a.name = "Foo";
-            b.name = "Boo";
-            List<Actor> aa = null;
-            aa.add(a);
-            aa.add(b);
-            List<Actor> actorsList = aa;
-            return actorsList;
+            return null;
         }
     }
 }

@@ -13,6 +13,7 @@ import java.util.Set;
 @Table(name = "actors")
 public class Actor {
     public String name;
+    public String image;
 
     public Actor() {
     }
@@ -25,6 +26,14 @@ public class Actor {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Column(name = "image", unique = true, nullable = true, length = 300)
+    public String getImage(){
+        return this.image;
+    }
+    public void setImage(String image){
+        this.image = image;
     }
 
 }
